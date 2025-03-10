@@ -45,8 +45,8 @@
 // const accounting = new Department("Accounting", []);
 // accounting.describe();
 
-// accounting.addEmployee("Patel");
-// accounting.addEmployee("Shivani");
+// accounting.addEmployee("Danish");
+// accounting.addEmployee("Amir");
 
 // accounting.printEmployeeInformation();
 
@@ -120,7 +120,7 @@ class AccountingDepartment extends Department {
     }
 
     addEmployee(emp: string): void {
-        if (emp === "Patel") {
+        if (emp === "Danish") {
             return;
         }
         this.employees.push(emp);
@@ -145,8 +145,8 @@ accDep.addReports("Bugs");
 // accDep.printReports();
 // accDep.describe();
 
-accDep.addEmployee("Patel");
-accDep.addEmployee("Shivani");
+accDep.addEmployee("Danish");
+accDep.addEmployee("Amir");
 // accDep.printEmployeeInformation();
 
 // setter & getter

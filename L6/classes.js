@@ -37,8 +37,8 @@
 // }
 // const accounting = new Department("Accounting", []);
 // accounting.describe();
-// accounting.addEmployee("Patel");
-// accounting.addEmployee("Shivani");
+// accounting.addEmployee("Danish");
+// accounting.addEmployee("Amir");
 // accounting.printEmployeeInformation();
 // // accounting.employees = ["xyz"]; 
 // accounting.printEmployeeInformation();
@@ -97,7 +97,7 @@ class AccountingDepartment extends Department {
         console.log(this.reports);
     }
     addEmployee(emp) {
-        if (emp === "Patel") {
+        if (emp === "Danish") {
             return;
         }
         this.employees.push(emp);
@@ -119,8 +119,8 @@ const accDep = new AccountingDepartment("d1", []);
 accDep.addReports("Bugs");
 // accDep.printReports();
 // accDep.describe();
-accDep.addEmployee("Patel");
-accDep.addEmployee("Shivani");
+accDep.addEmployee("Danish");
+accDep.addEmployee("Amir");
 // accDep.printEmployeeInformation();
 // setter & getter
 console.log("getter -> ", accDep.getReports);
