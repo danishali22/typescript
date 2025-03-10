@@ -1,4 +1,4 @@
-function sum(num1: number, num2: number, printResult: boolean, text: string) {
+function calculateSum(num1: number, num2: number, printResult: boolean, text: string) {
     if(printResult){
         console.log(`${text} ${num1 + num2}`);
     } else {
@@ -12,4 +12,4 @@ const n2 = 10;
 const printResult = true;
 const text = "Sum of two numbers is = "
 
-const result = sum(n1, n2, printResult, text);
+const result = calculateSum(n1, n2, printResult, text);
