@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardHeader, CardTitle } from "./ui/card";
 import { Button } from "./ui/button";
-import {Trash} from "lucide-react";
+import {Pencil, Trash} from "lucide-react";
 
 type TodoListProps = {
   items: {
@@ -19,13 +19,13 @@ const TodoList: React.FC<TodoListProps> = (props) => {
         <Card key={todo.id}>
           <CardHeader className="flex flex-row items-center justify-center gap-5">
             <CardTitle>{todo.text}</CardTitle>
+
             <Button
               onClick={() => props.onRemoveTodo(todo.id)}
+              variant={"destructive"}
               size="icon"
-              className="bg-red-500"
             >
-              {" "}
-              <Trash />{" "}
+              <Trash className="w-5 h-5" />
             </Button>
           </CardHeader>
         </Card>
