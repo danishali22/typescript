@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardHeader, CardTitle } from "./ui/card";
 import { Button } from "./ui/button";
-import {Pencil, Trash} from "lucide-react";
+import {Trash} from "lucide-react";
 
 type TodoListProps = {
   items: {
