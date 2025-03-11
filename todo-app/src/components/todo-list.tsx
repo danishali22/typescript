@@ -8,6 +8,7 @@ type TodoListProps = {
     id: string;
     text: string;
   }[];
+  onRemoveTodo: (todoId: string) => void
 };
 
 const TodoList: React.FC<TodoListProps> = (props) => {
@@ -18,7 +19,14 @@ const TodoList: React.FC<TodoListProps> = (props) => {
         <Card key={todo.id}>
           <CardHeader className="flex flex-row items-center justify-center gap-5">
             <CardTitle>{todo.text}</CardTitle>
-            <Button size="icon" className="bg-red-500"> <Trash /> </Button>
+            <Button
+              onClick={() => props.onRemoveTodo(todo.id)}
+              size="icon"
+              className="bg-red-500"
+            >
+              {" "}
+              <Trash />{" "}
+            </Button>
           </CardHeader>
         </Card>
       ))}
